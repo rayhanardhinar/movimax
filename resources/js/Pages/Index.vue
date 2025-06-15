@@ -1,4 +1,5 @@
 <script setup>
+import PrimaryButton from "@/Components/PrimaryButton.vue";
 import { Head, Link } from "@inertiajs/vue3";
 
 defineProps({
@@ -20,7 +21,7 @@ defineProps({
 </script>
 
 <template>
-    <Head title="Halo" />
+    <Head title="Welcome" />
 
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white"
@@ -51,11 +52,36 @@ defineProps({
 
         <div class="sm:fixed sm:top-0 sm:left-0 pt-3 pl-6 text-start">
             <div class="flex justify-center">
-                <img
-                    src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"
-                    alt="logo"
-                    class="w-20 h-16"
-                />
+                <a href="http://www.themoviedb.org">
+                    <img
+                        src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"
+                        alt="logo"
+                        class="w-20 h-16"
+                    />
+                </a>
+            </div>
+        </div>
+
+        <div class="justify-items-center mx-auto p-6 lg:p-8 space-y-4">
+            <div class="w-1/2 space-y-4">
+                <h1
+                    class="text-center text-8xl font-extrabold font-poppins dark:text-red-600"
+                >
+                    Movimax
+                </h1>
+                <p
+                    class="text-center text-2xl font-bold font-poppins dark:text-white"
+                >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus esse, cum dolor labore sint earum reprehenderit
+                    recusandae consectetur placeat hic quos libero repudiandae,
+                    facilis rerum dolorem omnis eum doloremque. Beatae.
+                </p>
+            </div>
+            <div>
+                <a href="/movies">
+                    <PrimaryButton class="px-6 py-4"> Dashboard </PrimaryButton>
+                </a>
             </div>
         </div>
     </div>
