@@ -26,18 +26,6 @@ const showingNavigationDropdown = ref(false);
                                     />
                                 </Link>
                             </div>
-
-                            <!-- Navigation Links -->
-                            <div
-                                class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"
-                            >
-                                <NavLink
-                                    :href="route('movies')"
-                                    :active="route().current('movies')"
-                                >
-                                    Movies
-                                </NavLink>
-                            </div>
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ms-6">
