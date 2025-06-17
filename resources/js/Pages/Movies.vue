@@ -52,7 +52,7 @@ const displayedMovies = computed(() => {
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex items-center justify-between"
         >
-            <div class="flex gap-3 flex-wrap">
+            <div class="flex gap-2 flex-wrap">
                 <button
                     v-for="tab in Object.keys(movieData)"
                     :key="tab"
@@ -97,7 +97,7 @@ const displayedMovies = computed(() => {
                 >
                     <div>
                         <img
-                            :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`"
+                            :src="`https://image.tmdb.org/t/p/w185${movie.poster_path}`"
                             :alt="movie.title"
                             class="mx-auto h-60 object-cover rounded"
                         />
